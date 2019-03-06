@@ -1,0 +1,17 @@
+require 'rubygems'
+require 'bundler/setup'
+
+require 'rubellite/alternator'
+require 'rubellite/array'
+require 'rubellite/object'
+require 'rubellite/character'
+require 'rubellite/enumerator'
+require 'rubellite/float'
+require 'rubellite/hash'
+require 'rubellite/integer'
+require 'rubellite/prime'
+require 'rubellite/regexp'
+require 'rubellite/string'
+require 'rubellite/symbol'
+
+require 'rubellite/version'
