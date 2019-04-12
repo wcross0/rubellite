@@ -1,3 +1,4 @@
+# Rubellite Version
 module Rubellite
-  VERSION = "0.2.8.a"
+  VERSION = '0.3.2'
 end

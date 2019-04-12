@@ -1,5 +1,6 @@
+# Fight is a funzies class to go along with Character
 class Fight
-  def initialize (player, monster)
+  def initialize(player, monster)
     @player = player
     @monster = monster
   end

@@ -1,7 +1,10 @@
 require 'prime'
 
+# Expands the Prime class
 class Prime
-  def factorization (n)
-    Prime.prime_division(n).map { |x, y| Array.new(y).map { x } }.flatten
-  end  
+  def factorization(num)
+    Prime.prime_division(num)
+         .map { |x, y| Array.new(y, x) }
+         .flatten
+  end
 end

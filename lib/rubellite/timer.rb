@@ -1,6 +1,7 @@
+# Timer is a better way of determining start_time - Time.now
 class Timer
   attr_reader :start
-  
+
   def initialize
     @start = Process.clock_gettime(Process::CLOCK_MONOTONIC)
   end
@@ -17,7 +18,8 @@ class Timer
   end
 
   def restart
-    @start, @end = Process.clock_gettime(Process::CLOCK_MONOTONIC), nil
+    @start = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+    @end = nil
     @start
   end
 end

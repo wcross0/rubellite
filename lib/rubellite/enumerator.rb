@@ -1,5 +1,6 @@
+# Expands the Enumerator class
 class Enumerator
-  def and(obj)
-    (to_a + obj.to_a).to_enum
+  def and(other)
+    (to_a + other.to_a).to_enum
   end
 end

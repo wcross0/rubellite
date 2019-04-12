@@ -1,20 +1,21 @@
+# Alternator is a True/False toggler
 class Alternator
-  def initialize(i=true)
-    @i = i
+  def initialize(val = true)
+    @val = val
   end
 
   def alternate
-    x = @i
-    @i ^= true
+    x = @val
+    @val ^= true
     x
   end
 
   def value
-    @i
+    @val
   end
-  
-  alias_method :flip, :alternate
-  alias_method :`, :alternate
-  alias_method :check, :value
-  alias_method :_, :value
+
+  alias check value
+  alias _ value
+  alias flip alternate
+  alias :` alternate
 end

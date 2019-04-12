@@ -1,3 +1,4 @@
+# Expands the Hash class
 class Hash
   def pop
     k = keys[-1]
@@ -14,6 +15,8 @@ class Hash
   end
 
   def grid(default = false)
-    Hash.new { |x_hash, x_key| x_hash[x_key] = Hash.new { |y_hash, y_key| y_hash[y_key] = default } }
+    Hash.new do |x_hash, x_key|
+      x_hash[x_key] = Hash.new { |y_hash, y_key| y_hash[y_key] = default }
+    end
   end
 end
